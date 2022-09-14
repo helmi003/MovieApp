@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "731137118195",
+    "project_id": "tp6f-49f03",
+    "storage_bucket": "tp6f-49f03.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:731137118195:android:87e3c845a34dfa08e98c86",
+        "android_client_info": {
+          "package_name": "com.example.tp6"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "731137118195-ush0d4nn2830bk08qf4e5ig0micgp2e2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3dTPB9yHGWXFBau9Av6eOqDK3qEnvKZI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "731137118195-ush0d4nn2830bk08qf4e5ig0micgp2e2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
