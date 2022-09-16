@@ -180,7 +180,7 @@ class _ModifyMovieState extends State<ModifyMovie> {
                         )),
                   ),
                   SizedBox(height: 10),
-                  RaisedButton(
+                  ElevatedButton(
                     child: Text('Pick a date'),
                     onPressed: () {
                       showDatePicker(

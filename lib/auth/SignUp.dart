@@ -83,7 +83,7 @@ class _SignUpState extends State<SignUp> {
             content:
                 Text("The email address is already in use by another account."),
             actions: <Widget>[
-              FlatButton(
+              TextButton(
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
@@ -168,19 +168,21 @@ class _SignUpState extends State<SignUp> {
                 SelectRadioButton(),
                 Column(mainAxisAlignment: MainAxisAlignment.center, children: <
                     Widget>[
-                  RaisedButton(
-                    padding: EdgeInsets.only(left: 30, right: 30),
-                    onPressed: signUp,
-                    child: Text('SignUp',
-                        style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20.0,
-                            fontWeight: FontWeight.bold)),
-                    color: Colors.orange,
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                  ),
+                  Padding(
+                        padding: EdgeInsets.fromLTRB(70, 10, 70, 10),
+                        child: ElevatedButton(
+                            onPressed: signUp,
+                            child: Text('LOGIN',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.bold)),
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.orange,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(20.0),
+                              ),
+                            ))),
                   Row(mainAxisAlignment: MainAxisAlignment.center, children: [
                     Text(
                       "Already have an account? ",

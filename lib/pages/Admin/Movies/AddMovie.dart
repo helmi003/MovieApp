@@ -139,7 +139,7 @@ class _AddMovieState extends State<AddMovie> {
                     )),
               ),
               SizedBox(height: 10),
-              RaisedButton(
+              ElevatedButton(
                 child: Text('Pick a date'),
                 onPressed: () {
                   showDatePicker(

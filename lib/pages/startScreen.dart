@@ -68,41 +68,45 @@ class _StartState extends State<StartScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: <Widget>[
-                RaisedButton(
+                Padding(
                     padding: EdgeInsets.only(left: 30, right: 30),
-                    onPressed: () {
-                      Navigator.pushReplacementNamed(context, "login");
-                    },
-                    child: Text(
-                      'LOGIN',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
-                    ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                    color: Colors.orange),
+                    child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushReplacementNamed(context, "login");
+                        },
+                        child: Text(
+                          'LOGIN',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                        style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                            backgroundColor: Colors.orange))),
                 SizedBox(width: 20.0),
-                RaisedButton(
+                Padding(
                     padding: EdgeInsets.only(left: 30, right: 30),
-                    onPressed: () {
-                      Navigator.pushReplacementNamed(context, "signup");
-                    },
-                    child: Text(
-                      'Sign Up',
-                      style: TextStyle(
-                        fontSize: 20,
-                        fontWeight: FontWeight.bold,
-                        color: Colors.white,
-                      ),
-                    ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(10.0),
-                    ),
-                    color: Colors.orange),
+                    child: ElevatedButton(
+                        onPressed: () {
+                          Navigator.pushReplacementNamed(context, "signup");
+                        },
+                        child: Text(
+                          'Sign Up',
+                          style: TextStyle(
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
+                            color: Colors.white,
+                          ),
+                        ),
+                        style: ElevatedButton.styleFrom(
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(10.0),
+                            ),
+                            backgroundColor: Colors.orange))),
               ],
             ),
           ],

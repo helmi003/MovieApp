@@ -146,12 +146,12 @@ class _MovieAdminState extends State<MovieAdmin> {
             title: Text('Alert'),
             content: Text("Do you want to delete this movie"),
             actions: <Widget>[
-              FlatButton(
+              TextButton(
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
                   child: Text('No')),
-              FlatButton(
+              TextButton(
                   onPressed: () {
                     DatabaseMethodsMovies().deleteMovie(id);
                     Navigator.of(context).pop();

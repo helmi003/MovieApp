@@ -252,7 +252,7 @@ class _MovieDetailState extends State<MovieDetail> {
             title: Text('Appologies'),
             content: Text("link not available :'("),
             actions: <Widget>[
-              FlatButton(
+              ElevatedButton(
                   onPressed: () {
                     Navigator.of(context).pop();
                   },

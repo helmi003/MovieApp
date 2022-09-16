@@ -61,7 +61,7 @@ class _LoginScreenState extends State<LoginScreen> {
             title: Text('ERROR'),
             content: Text("The email address or password are badly formatted."),
             actions: <Widget>[
-              FlatButton(
+              TextButton(
                   onPressed: () {
                     Navigator.of(context).pop();
                   },
@@ -120,19 +120,21 @@ class _LoginScreenState extends State<LoginScreen> {
                           onSaved: (input) => _password = input!),
                     ),
                     SizedBox(height: 20),
-                    RaisedButton(
-                      padding: EdgeInsets.fromLTRB(70, 10, 70, 10),
-                      onPressed: login,
-                      child: Text('LOGIN',
-                          style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 20.0,
-                              fontWeight: FontWeight.bold)),
-                      color: Colors.orange,
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(20.0),
-                      ),
-                    )
+                    Padding(
+                        padding: EdgeInsets.fromLTRB(70, 10, 70, 10),
+                        child: ElevatedButton(
+                            onPressed: login,
+                            child: Text('LOGIN',
+                                style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 20.0,
+                                    fontWeight: FontWeight.bold)),
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: Colors.orange,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(20.0),
+                              ),
+                            )))
                   ],
                 ),
               ),
